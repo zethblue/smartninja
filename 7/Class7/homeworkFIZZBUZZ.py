@@ -24,7 +24,11 @@ if __name__ == '__main__':
 
     while ZAHL1 < 300:
         ZAHL1 = ZAHL1 + 1
-        if ZAHL1 % 3 == 0:
+        if ZAHL1 % 3 == 0 and ZAHL1 % 5 != 0:
             print "FIZZ"
-        if ZAHL1 % 5 == 0:
+        elif ZAHL1 % 5 == 0 and ZAHL1 % 3 != 0:
             print "BUZZ"
+        elif ZAHL1 % 3 == 0 and ZAHL1 % 5 == 0:
+            print "FIZZBUZZ"
+        else:
+            print ZAHL1
