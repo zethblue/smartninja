@@ -1,6 +1,7 @@
 """
 script3.py: Usereingabe Beispiele, Kopie mit Zahlen abgewandelt
 """
+
 if __name__ == '__main__':
     # Eingabe Zahl
     try:
