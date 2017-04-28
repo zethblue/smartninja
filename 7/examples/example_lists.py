@@ -20,8 +20,8 @@ print shoppingList[-1]
 print
 
 # refer to multiple elements
-print shoppingList[:-1]
-print shoppingList[1:]
+print shoppingList[:-1] # doppelpunkt vor -1 ist alles bis zum letzten Wert
+print shoppingList[1:]  # doppelpunkt nach der Zahl ist alles vor der Zahl
 print
 
 # reverse
