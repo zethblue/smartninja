@@ -1,4 +1,4 @@
-# initialize
+    # initialize
 newList = []
 print "newList = []"
 print "newList ="
