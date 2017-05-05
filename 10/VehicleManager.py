@@ -1,6 +1,6 @@
 """Vehicle Manager"""
 # Version 0.2A Testing Phase #
-
+LVehicle=[]
 class Vehicle(object):
     def __init__(self, brand, model, km, GNS):
         self.brand = brand
@@ -18,9 +18,8 @@ def adding_car():
     print "Please enter the Date of the last Checkup/Service"
     GNS = raw_input()
     addIT = Vehicle(brand=brand, model=model, km=km, GNS=GNS)
-    Vehicle.append(addIT)
+    LVehicle.append(addIT)
     print "Car was added"
-
 
 
    # def editing_car
@@ -46,6 +45,7 @@ if __name__ == '__main__':
         except:
             print "Please enter a valid number"
             w = 0
+
         if CHOICE != 1 or 2 or 3 or 4 or 5:
             print "Please enter a valid number"
             w = 0
@@ -53,15 +53,13 @@ if __name__ == '__main__':
         if CHOICE == 1:
             adding_car()
         elif CHOICE == 2:
-            editcar
+            editing_car ()
         elif CHOICE == 3:
-            delcar
+            deleting_car()
         elif CHOICE == 4:
-            listcar
+            listing_car ()
         elif CHOICE == 5:
             quit()
-
-
 
 
 
