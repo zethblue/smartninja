@@ -6,4 +6,8 @@ class Person(object):
         self.birth_year = birth_year
         self.email = email
 
+    def tanzen(self):
+        print "Seht her ich heisse", self.first_name, "ich kann super gut tanzen"
+
 albert = Person('Albert','Zopf','0664-985348',1990,'albert@email.com')
+albert.tanzen()
