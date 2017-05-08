@@ -1,25 +1,16 @@
 """Vehicle Manager"""
 # Version 0.2A Testing Phase #
-LVehicle=[]
+LVehicle = [0]
 class Vehicle(object):
-    def __init__(self, brand, model, km, GNS):
-        self.brand = brand
-        self.model = model
-        self.km = km
-        self.GNS = GNS
+    def __init__(self, brand_f, model_f, km_f, GNS_f):
+        self.brand_f = brand_f
+        self.model_f = model_f
+        self.km_f = km_f
+        self.GNS_f = GNS_f
 
-def adding_car():
-    print "Please insert the brand of your car"
-    brand = raw_input()
-    print "Please insert the Model of the car"
-    model = raw_input()
-    print "Please insert the kilometers of the car"
-    km = raw_input()
-    print "Please enter the Date of the last Checkup/Service"
-    GNS = raw_input()
-    addIT = Vehicle(brand=brand, model=model, km=km, GNS=GNS)
-    LVehicle.append(addIT)
-    print "Car was added"
+    def adding_car(self,a,b,c,d):
+        newcar = Vehicle(a, b, c, d)
+        return newcar
 
 
    # def editing_car
@@ -51,7 +42,19 @@ if __name__ == '__main__':
             w = 0
 
         if CHOICE == 1:
-            adding_car()
+            print "Please insert the brand of your car"
+            e = raw_input()
+            print "Please insert the Model of the car"
+            f = raw_input()
+            print "Please insert the kilometers of the car"
+            g = raw_input()
+            print "Please enter the Date of the last Checkup/Service"
+            h = raw_input()
+            adding_car(e, f, g, h)
+            LVehicle.append(newcar)
+            print newcar, "has been added"
+            print LVehicle[01]
+
         elif CHOICE == 2:
             editing_car ()
         elif CHOICE == 3:
@@ -60,6 +63,7 @@ if __name__ == '__main__':
             listing_car ()
         elif CHOICE == 5:
             quit()
+
 
 
 
