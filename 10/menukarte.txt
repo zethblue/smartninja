@@ -1,0 +1,4 @@
+Speisentyp, Name, Preis
+Nachspeise,N1,4,4
+Vorspeise,V1,2.5
+Hauptspeise,H1,6,4
