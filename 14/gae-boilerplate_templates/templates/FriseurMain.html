@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Svetlanas Friseurbude</title>
+
+    <!-- Bootstrap + Javaskript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class ="container-fluid">
+        <div class = "navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Friseuse Svetlana</a>
+         </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class = "container-fluid">
+            <ul class="nav navbar-nav nav navbar-right">
+            <li class="active"><a href="#S1">Mein Angebot <span class="sr-only">(current)</span></a></li>
+            <li><a href="#S2">Komm zu mir! (Termine)</a></li>
+            <li><a href="#S3">Frage mich!</a></li>
+            <li><a href="#S5">FAQ</a></li>
+            <li><a href="#S4">Über mich</a></li>
+            </ul></div></div>
+
+</nav>
+
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="b1.jpg" alt="image 1">
+                </div>
+
+                <div class="item">
+                    <img src="b2.jpg" alt="image 2">
+                </div>
+                <div class="item">
+                    <img src="b3.jpg" alt="image 3">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container" id="S1">
+        <br><br>
+        <h2 class="text-center">Was ich anbiete</h2>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Ich mach Haare schön</h3> <br>
+                <img src="e1.jpg">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Färben inklusive </h3> <br>
+                <img src="e3.jpg">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Geile Frisuren von Svetlana</h3> <br>
+                <img src="e2.jpg">
+            </div>
+        </div>
+    </div>
+<br><br><br>
+    <div class="container" id="S2">
+        <h2 class="text-center">Komm zu mir! Svetlana richtet auch deine Haare:</h2>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 form-group">
+                <input type="text" class="form-control" placeholder="Dein Name">
+                <br>
+                <input type="text" class="form-control" placeholder="Telefonnummer">
+                <br>
+                <input type="text" class="form-control" placeholder="Wann genau?">
+                <br>
+                <textarea class="form-control" placeholder="Zusatzinformation" rows="5"></textarea>
+                <br>
+                <br>
+                <button class="btn btn-success center-block">Schick</button>
+            </div>
+
+            <div class="col-md-4 col-md-offset-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Meine Tage habe ich:</th>
+                            <th>Erreichbar von-bis</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Montag</td>
+                            <td>Geschlossen</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dienstag</td>
+                            <td>09:00 - 21:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mittwoch</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Donnerstag</td>
+                            <td>Geschlossen</td>
+                        </tr>
+
+                        <tr>
+                            <td>Freitag</td>
+                            <td>08:00 - 18:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Samstag</td>
+                            <td>8:00 - 12:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sunday</td>
+                            <td>8:00 - 18:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p> Bitte unbedingt einen Termin ausmachen.</p>
+            </div>
+        </div>
+    </div>
+<br><br>
+<h2 class="text-center" id="S3">Frage mich, ich beiße nicht!</h2> <br>
+
+<div class = "container" align = center>
+
+        <input type="text" class="form-control" placeholder="Meine Mail Adresse">
+        <br>
+        <br>
+        <textarea class="form-control" placeholder="Text für Fragen aller Art" rows="5"></textarea>
+        <br>
+        <br>
+        <button class="btn btn-success center-block">Frage mich!</button>
+    </div>
+<br><br>
+<div class ="container" id="S5">
+    <div class="jumbotron">
+        <h2 align="center">FAQ</h2> <br>
+        <h4 align="center">Hast du Auszeichnungen erhalten?</h4>
+        <h5 align="center">Zweimal Friseuse des Jahres, 2012 und 2014</h5><br>
+        <h4 align="center">Ist der Friseur Haustierfreundlich?</h4>
+        <h5 align="center">Natürlich, nimm deinen vierbeinigen Freund mit, er wird gut versorgt</h5><br>
+        <h4 align="center">Warum gerade Svetlana</h4>
+        <h5 align="center">Svetlana bietet einfach alles: Rundumservice zum Wohlfühlen</h5>
+
+</div>
+</div>
+<br><br><br><br>
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-4 form-group" align="center" id="S4">
+                <h2 class =text-center"> Über mich</h2>
+                <p><h5>Mein Name ist Svetlana und ich bin 50 Jahre alt.<br>
+                Ich bin gelernte Friseur-Meisterin seit 30 Jahren<br>
+                Seit 15 Jahren führe ich meinen eigenen Laden</h5></p>
+                <p>Komme zur Meisterin der Frisuren!</p> </div>
+            <div class="col-md-4" align="center">
+                <img src="svet.png">
+            </div>
+            <div class="col-md-4" align="center">
+                <h2 class =text-center">Kontakt:</h2>
+                <p><h5>Svetlanas Friseurbude KEG<br>
+                UST-ID: AT32432432<br>
+                Hans-Schorle-Strasse 18<br>
+                1220 Wien<br>
+                Phone: 0190 666 333</h5></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
