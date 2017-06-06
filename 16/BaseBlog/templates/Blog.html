@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My own Blog</title>
+</head>
+<body>
+<p><h1>My personal Blog</h1></p>
+
+<h1> Post it:</h1><br><br>
+
+    <form method="post" action="/">
+        <textarea name="input"> </textarea>
+        <button type="submit">Publish</button>
+    </form>
+
+<h1>Entries:</h1>
+    {% if input %}
+    <ul>
+        {% for item in input %}
+        <li>{{ item }}</li>
+
+    {% endfor %}
+        </ul>
+    {% endif -%}
+
+</body>
+</html>
