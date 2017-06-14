@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>SmartNinja basic Jinja template</title>
+    </head>
+
+    <body>
+        <h1>Hello, SmartNinja!</h1>
+
+        <form method="post" action="/">
+            Name:
+            <input name="some_name">
+            <br>
+            Message:
+            <input name="some_text">
+            <br>
+            Another Message:
+            <input name="another_text">
+            <br>
+            <button type="submit">Publish</button>
+        </form>
+
+
+        <div class="container">
+        {% if messages %}
+        <h2> List of all messages </h2>
+        <ul>
+        {% for message in messages %}
+            <div class ="container">
+                <li class="list-group-item"><a href="/message/{{ message.key.id() }}">{{ message.name }} </li>
+                <li class="list-group-item"> {{ message.message_text }} </li>
+                <li class="list-group-item"> {{ message.another_text }}</li><br></a></p>
+            </div>
+       {% endfor %}
+        </ul>
+        {% endif -%}
+        </div>
+
+
+    </body>
+</html>

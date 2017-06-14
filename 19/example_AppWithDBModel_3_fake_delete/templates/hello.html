@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>SmartNinja basic Jinja template</title>
+    </head>
+
+    <body>
+        <h1>Hello, SmartNinja!</h1>
+
+        <form method="post" action="/">
+            Name:
+            <input name="some_name">
+            <br>
+            Message:
+            <input name="some_text">
+            <br>
+            <button type="submit">Publish</button>
+        </form>
+
+
+
+        {% if messages %}
+        <h2> List of all messages </h2>
+        <ul>
+        {% for message in messages %}
+            <p><a href="/message/{{ message.key.id() }}">  FakeLink </a></p> 
+                This is eval code on your site <a><p>
+
+                {{ message.name }}: {{ message.message_text }}
+
+            </a></p>
+       {% endfor %}
+        </ul>
+        {% endif -%}
+
+
+    </body>
+</html>
