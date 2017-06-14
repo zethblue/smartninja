@@ -20,11 +20,11 @@ def adding_car(a ,b ,c ,d):
 
 
 if __name__ == '__main__':
-    w=0
+
     print "Welcome to Vehicle Manager 0.1A"
 
-    while w == 0:
-        w += 1
+    while True:
+
         print "Do you want to add a Car, please type 1"
         print "If you want to edit a Car, please type 2"
         print "If you want to delete a Car, please type 3"
@@ -34,11 +34,11 @@ if __name__ == '__main__':
             CHOICE = int(raw_input())
         except:
             print "Please enter a valid number"
-            w = 0
 
-        if CHOICE not in range(1,6):
+
+        if CHOICE not in range(1, 6):
             print "Please enter a valid number"
-            w = 0
+
 
         if CHOICE == 1:
             print "Please insert the brand of your car"

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michaels Fakebook</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<h1 align="center"> Michaels Fakebook Site</h1><br><br>
+<br><br>
+<p align="center"><input type="text" placeholder="Search Fakebook"><button>Search</button></p>
+<br>
+<div class="container" align="center">
+    <img src="Bild1fakebook.jpg">
+</div>
+<br><br>
+<div class="row">
+    <div class="col-md-3" align="center">
+
+        <h2><button data-toggle="modal" data-target="#myModa1">About me</button></h2>
+    </div>
+    <div class="col-md-3" align="center">
+        <h2><button data-toggle="modal" data-target="#myModa2">Fakebook Contacts</button></h2>
+    </div>
+    <div class="col-md-3" align="center">
+        <h2><button>Add Me</button></h2>
+    </div>
+    <div class="col-md-3" align="center">
+        <h2><button data-toggle="modal" data-target="#myModa3">Impressum</button></h2>
+    </div>
+</div>
+
+<div class="modal fade" id="myModa1" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">About me</h2>
+        </div>
+        <div class="modal-body">
+
+          <ul><li>I am 30 years old</li>
+              <li>I live near Vienna</li>
+              <li>I like cats and dogs</li>
+              <li>Gaming is my passion</li>
+              <li>Hang out with friends</li>
+          </ul>
+        </div>
+          <div class="modal-footer" align="center"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
+
+      </div></div>
+</div>
+<div class="modal fade" id="myModa2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Fakebook Contacts:</h2>
+        </div>
+        <div class="modal-body">
+            NONE - I don't have any friends
+        </div>
+          <div class="modal-footer" align="center"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
+
+      </div></div>
+</div>
+<div class="modal fade" id="myModa3" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Impressum</h2>
+        </div>
+        <div class="modal-body">
+            This is a fake site, made by me for SMARTNINJA
+        </div>
+          <div class="modal-footer" align="center"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
+
+      </div></div>
+</div>
+
+
+
+</body>
+</html>
