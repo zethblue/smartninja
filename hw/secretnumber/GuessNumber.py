@@ -10,10 +10,22 @@ if __name__ == '__main__':
 
         if counter == 0:
             print "\nGuess the Secret Number between 1 and 10 You have 3 tries!\n"
-            variable = int(raw_input())
+            variable = raw_input()
+            try:
+                float(variable)
+            except:
+                print "Error. Not a correct number. Program is closing"
+                quit()
+
+
         else:
             print "Try again!\n"
-            variable = int(raw_input())
+            variable = raw_input()
+            try:
+                float(variable)
+            except:
+                print "Error. Not a correct number. Program is closing"
+                quit()
 
 
         if variable == number:
