@@ -48,8 +48,9 @@ if __name__ == '__main__':
                 f.write(content)
 
         elif answer == "4":
-            # todo: set löschen
-            print "Set löschen"
+            del tagesmenus
+            print "Set wurde gelöscht"
+
         else:
             print "unknown input"
 
