@@ -1,0 +1,11 @@
+<body>
+    <form action="/message/{{ message.key.id() }}/edit" method="post">
+        Name:
+        <input name="some_name" value="{{ message.name }}">
+        <br>
+        Message:
+        <input name="some_text" value="{{ message.message_text }}">
+        <br>
+        <button type="submit">OK</button>
+    </form>
+</body>

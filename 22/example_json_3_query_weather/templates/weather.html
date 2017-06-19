@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+            <link type="text/css" rel="stylesheet" href="/css/style.css">
+
+            <meta charset="UTF-8">
+            <title>Weather</title>
+    </head>
+    <body>
+        <h2>Weather in location {{ weather_info.name }}</h2>
+
+        <p>Description: {{ weather_info.weather[0].description }}</p>
+        <p>Current temperature: {{ weather_info.main.temp }} degrees Celsius</p>
+
+
+        <ul>
+            <li><a href="/weather/London,uk">London</a></li>
+            <li><a href="/weather/Prag">Prag</a>
+            <li><a href="/weather/Berlin">Berlin</a></li>
+            <li><a href="/weather/Vienna">Vienna</a></li>
+            <li><a href="/weather/Prague">Prague</a></li>
+            <li><a href="/weather/Budapest">Budapest</a></li>
+            <li><a href="/weather/Paris">Paris</a></li>
+        </ul>
+
+    </body>
+</html>
