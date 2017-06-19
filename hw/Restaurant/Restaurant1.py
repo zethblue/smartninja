@@ -49,6 +49,7 @@ if __name__ == '__main__':
 
         elif answer == "4":
             del tagesmenus
+            tagesmenus = []
             print "Set wurde gelöscht"
 
         else:
