@@ -48,7 +48,6 @@ if __name__ == '__main__':
                 f.write(content)
 
         elif answer == "4":
-            del tagesmenus
             tagesmenus = []
             print "Set wurde gelöscht"
 
