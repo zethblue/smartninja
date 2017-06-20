@@ -71,7 +71,26 @@ class CalculatorHandler(BaseHandler):
         solution = {"solution": sol}
         return self.render_template("calc.html", params=solution)
 
-        #todo LengthUnitConvertHandler
+class UnitHandler(BaseHandler):
+    def get(self):
+        return self.render_template("unit.html")
+
+    def post(self):
+        number = float(self.request.get("convert"))
+        option = self.request.get("unit")
+
+        if option == "miles":
+            number = number * 1.60934
+            kmile = "Km"
+        elif option == "km":
+            number = number * 0.621371
+            kmile = "Miles"
+        else:
+            number = 0
+
+        solution = {"number": number, "kmiles": kmile}
+        return self.render_template("unit.html",params=solution)
+
 
 app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler),
@@ -79,7 +98,8 @@ app = webapp2.WSGIApplication([
     webapp2.Route('/lottery', LotteryHandler),
     webapp2.Route('/time', CurrentTimeHandler),
     webapp2.Route('/guess', GuessNumberHandler),
-    webapp2.Route('/calc', CalculatorHandler)
+    webapp2.Route('/calc', CalculatorHandler),
+    webapp2.Route('/unit', UnitHandler),
 ], debug=True)
 
 
